@@ -1,0 +1,12 @@
+$('#result').empty().append("<%= j render('users/display') %>");
+$( "#click-me" ).click(function() {
+    if ($("#click-me").text() === 'Show'){
+      $(".hide").show();
+      $('#click-me').text("Hide");
+      
+     } else {
+      $(".hide").hide();
+      $('#click-me').text("Show");
+      
+     }
+});

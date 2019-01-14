@@ -1,0 +1,7 @@
+<% @users.load.each  do  |u|%>
+    <div>
+      Name: <%= u.name %>   
+    </div>
+<% end %>
+<%= link_to 'Change Below', user_path(2), remote: true %>
+ 
